@@ -84,6 +84,13 @@ public class GameCtrl
 
 	public static void main(String[] args)
 	{
+		MainFeature main = new MainFeature();
+		System.out.println(main);
+
+		NewFeature feature = new NewFeature();
+
+		System.out.println(feature);
+
 		IThinker thinker = chooseType("Thinker") == 1 ? new HumanThinker() : new ComputerThinker();
 		int guesserType = chooseType("Guesser");
 		IGuesser guesser = guesserType == 1 ? new HumanGuesser() : guesserType == 2 ? new ComputerGuesser() : new RandomComputerGuesser();
