@@ -4,7 +4,7 @@ public class AlienThinker implements IThinker
     @Override
     public void yourTurn()
     {
-        
+
     }
 
     @Override
